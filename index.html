@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<title>React Components</title>
+
+		<!-- bootstrap css -->
+		<link
+			rel="stylesheet"
+			href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+		/>
+
+		<!-- local styles -->
+		<link rel="stylesheet" href="styles.css" />
+
+		<!-- don't use this in production: -->
+		<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+	</head>
+	<body>
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+			<div class="container-fluid">
+				<a class="navbar-brand" href="#">Navbar</a>
+				<button
+					class="navbar-toggler"
+					type="button"
+					data-bs-toggle="collapse"
+					data-bs-target="#navbarNav"
+					aria-controls="navbarNav"
+					aria-expanded="false"
+					aria-label="Toggle navigation"
+				>
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarNav">
+					<ul class="navbar-nav">
+						<li class="nav-item">
+							<a class="nav-link active" aria-current="page" href="#home"
+								>Home</a
+							>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#book_link">Book 1</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#book2_link">Book 2</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#book3_link">Book 3</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<div>
+			<h1>Read all about it - Fresh Code!</h1>
+			<br />
+			<br />
+			<h2 id="home">Home is where the heart is!</h2>
+			<p>
+				Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui, sit
+				soluta deserunt iste est nisi harum ad tempore beatae, nesciunt neque
+				vel? Amet, officia illo praesentium et vero esse. Sint.
+			</p>
+		</div>
+		<!-- we will put our react component inside this div -->
+		<div id="root"></div>
+
+		<!-- load react -->
+		<script
+			src="https://unpkg.com/react/umd/react.development.js"
+			crossorigin
+		></script>
+		<script
+			src="https://unpkg.com/react-dom/umd/react-dom.development.js"
+			crossorigin
+		></script>
+
+		<!-- load our react component. -->
+		<script src="books.js" defer type="text/babel"></script>
+		<script src="index.js" defer type="text/babel"></script>
+	</body>
+</html>
